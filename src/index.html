@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Starbucks</title>
+</head>
+<body>
+    <h1>Starbucks</h1>
+
+    <!-- Formulario login/registro -->
+    <form onsubmit="return false;">
+        <div>
+            <label for="nombre">Nombre de usuario:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Introduce tu nombre" required><br>
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" placeholder="Introduce tu Contraseña" required><br>
+
+            <button type="button" onclick="login()">Login</button>
+            <button type="button" onclick="registrar()">Registrar</button>
+
+            <p id="resultado"></p>
+        </div>
+    </form>
+
+    <!-- Botón cargar posts -->
+    <button id="Posts">CARGAR POSTS</button>
+
+    <!-- Búsqueda -->
+    <input type="text" id="busqueda" placeholder="Escribe un Café de los posts para buscar...">
+    <button type="button" onclick="buscarPosts()">Buscar</button>
+
+    <!-- Contenedor de posts -->
+    <div id="listaPosts"></div>
+
+    <img src="./Imagenes/Starbucks Logo.png" width="12%" height="12%">
+
+    <script src="script.js"></script>
+</body>
+</html>
